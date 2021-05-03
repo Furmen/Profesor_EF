@@ -2173,3 +2173,8 @@ a:hover {
 .trainers-small .trainer.first {
     margin-left: 0;
 }
+
+.teacher-face {
+    background-image: url('../images/bg_2.jpg');
+    background-attachment: fixed
+}

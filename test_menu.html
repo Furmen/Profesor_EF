@@ -1,0 +1,169 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Profesor X &mdash; Entrenamiento personalizado</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="images/1.jpg" type="image/x-icon">
+
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+    <link href="//fonts.googleapis.com/css?family=Amatic+SC:400,700|Work+Sans:300,400,700" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: lightgray;
+            overflow-x: hidden;
+        }
+        
+        header {
+            float: right;
+            width: 15vw;
+            height: 100%;
+            font-size: 18px;
+        }
+        
+        header .menu-area ul {
+            list-style: none;
+            position: relative;
+            left: -9vw;
+            background-color: white;
+        }
+        
+        .ani1 ul li {
+            margin: 10px auto;
+        }
+        /***********************************/
+        
+        .ani1:hover ul li:nth-child(1) {
+            animation: slidein .5s ease;
+            background-color: white;
+            opacity: 1;
+        }
+        
+        .ani1:hover ul li:nth-child(2) {
+            animation: slidein .6s ease;
+            background-color: white;
+            opacity: 1;
+        }
+        
+        .ani1:hover ul li:nth-child(3) {
+            animation: slidein .7s ease;
+            background-color: white;
+            opacity: 1;
+        }
+        
+        .ani1:hover ul li:nth-child(4) {
+            animation: slidein .8s ease;
+            background-color: white;
+            opacity: 1;
+        }
+        
+        .ani1:hover ul li:nth-child(5) {
+            animation: slidein .9s ease;
+            background-color: white;
+            opacity: 1;
+        }
+        
+        .ani1:hover ul li:nth-child(6) {
+            animation: slidein 1s ease;
+            background-color: white;
+            opacity: 1;
+        }
+        /***********************************/
+        
+        .ani1 ul li:nth-child(1) {
+            animation: slideout 1s ease;
+            background-color: transparent;
+            opacity: 0;
+        }
+        
+        .ani1 ul li:nth-child(2) {
+            animation: slideout .9s ease;
+            background-color: transparent;
+            opacity: 0;
+        }
+        
+        .ani1 ul li:nth-child(3) {
+            animation: slideout .8s ease;
+            background-color: transparent;
+            opacity: 0;
+        }
+        
+        .ani1 ul li:nth-child(4) {
+            animation: slideout .7s ease;
+            background-color: transparent;
+            opacity: 0;
+        }
+        
+        .ani1 ul li:nth-child(5) {
+            animation: slideout .6s ease;
+            background-color: transparent;
+            opacity: 0;
+        }
+        
+        .ani1 ul li:nth-child(6) {
+            animation: slideout .5s ease;
+            background-color: transparent;
+            opacity: 0;
+        }
+        /***********************************/
+        
+        @keyframes slidein {
+            from {
+                margin-left: 5rem;
+                width: 5rem;
+                opacity: 0;
+                position: inherit;
+            }
+            to {
+                margin-left: 0rem;
+                width: 0rem;
+                opacity: 1;
+                position: relative;
+            }
+        }
+        
+        @keyframes slideout {
+            from {
+                margin-left: 0rem;
+                width: 0rem;
+                opacity: 1;
+                position: relative;
+            }
+            to {
+                margin-left: 5rem;
+                width: 5rem;
+                opacity: 0;
+                position: inherit;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="menu-area">
+            <div class="ani1">
+                <a href="#">
+                    <svg style="width: 25px;" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-inline--fa fa-bars fa-w-14 fa-2x">
+                        <path fill="currentColor"
+                            d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"
+                            class="">
+                        </path>
+                    </svg>
+                </a>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+</body>
+
+</html>

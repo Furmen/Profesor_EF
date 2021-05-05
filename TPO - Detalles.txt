@@ -1,0 +1,5 @@
+TPO - Se entrega el 17/05
+
+	* Dejar solo las cards de Boostrap
+	* Quitar todo lo del sitio de Trabu y armarlo con Flex (lo mas simple posible)
+	* Armar la plantilla madre (header, navegacion, footer) y despues usarlo en el resto de las cosas

@@ -5,21 +5,21 @@
 
 /**************************** SCROLLBAR *****************************/
 
-body::-webkit-scrollbar {
-    width: 1em;
+#container::-webkit-scrollbar {
+    width: 0em;
 }
 
-body::-webkit-scrollbar-track {
+#container::-webkit-scrollbar-track {
     box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
 }
 
-body::-webkit-scrollbar-thumb {
+#container::-webkit-scrollbar-thumb {
     background-color: darkgrey;
     outline: 1px solid slategrey;
 }
 
 @media screen and (max-width: 575px) {
-    body::-webkit-scrollbar {
+    #container::-webkit-scrollbar {
         width: 0em;
     }
 }
@@ -29,11 +29,12 @@ body::-webkit-scrollbar-thumb {
 
 body {
     display: flex;
-    min-height: 100vh;
+    max-height: 100vh;
     flex-direction: column;
     margin: 0;
     padding: 0 3%;
     background-image: url('../images/bg_2.jpg');
+    overflow: hidden;
 }
 
 a {
@@ -116,7 +117,20 @@ aside {
 }
 
 
-/********************** FOTOS PRINCIPALES + MENSAJE ***********************/
+/********************** CONTAINER ***********************/
+
+#container {
+    max-height: 100vh;
+    background-color: transparent;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+
+/********************** CONTAINER ***********************/
+
+
+/********************** FOTO BANNER ***********************/
 
 #main-photos {
     order: 1;
@@ -146,7 +160,7 @@ aside {
 }
 
 
-/********************** FOTOS PRINCIPALES + MENSAJE ***********************/
+/********************** FOTO BANNER ***********************/
 
 
 /********************** GALERIA DE FOTOS ***********************/
@@ -158,7 +172,7 @@ aside {
     justify-content: space-around;
     text-align: center;
     background-color: white;
-    order: 2;
+    order: 3;
 }
 
 #gallery section {
@@ -209,23 +223,208 @@ aside {
 
 #photo-face {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    order: 3;
+    text-align: center;
+    padding: 25px;
+    order: 2;
     height: 50vh;
+    color: white;
 }
 
 #photo-face article {
     background-image: url('../images/cara.jpg');
     background-size: contain;
     background-repeat: no-repeat;
-    width: 25vw;
-    height: 25vh;
+    width: 225px;
+    height: 225px;
     border-radius: 50%;
+}
+
+#photo-face h2 {
+    font-size: 28px;
+}
+
+#photo-face p {
+    font-size: 16px;
+    margin: 25px;
+}
+
+#photo-face a {
+    border: 1px solid lightcyan;
+    color: gray;
+    background-color: lightcyan;
+    font-size: 1em;
+    padding: 8px;
+    border-radius: 10%;
+}
+
+#photo-face a:hover {
+    border: 1px solid darkcyan;
+    background-color: darkcyan;
+    font-weight: bold;
+    color: white;
 }
 
 
 /********************** FOTO DE CARA ***********************/
 
-footer {
-    order: 4;
+
+/********************** CURRICULUM ***********************/
+
+[id^='curriculum-'] {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-items: center;
+    order: 1;
+    background-color: lightgrey;
+    margin-bottom: 8rem;
 }
+
+[id^='curriculum-'] article {
+    order: 1;
+    width: 70%;
+    font-size: large;
+    background-color: white;
+}
+
+[id^='curriculum-'] h1 {
+    text-align: center;
+}
+
+[id^='curriculum-'] article ul {
+    list-style: none;
+}
+
+[id^='curriculum-'] article ul li {
+    margin: 20px auto;
+    border-bottom: 1px solid lightgray;
+}
+
+[id^='curriculum-'] article section h1 {
+    font-size: 34px;
+}
+
+[id^='curriculum-'] aside {
+    order: 2;
+    width: 30%;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+[id^='curriculum-'] aside img {
+    width: 30vw;
+}
+
+@media screen and (max-width: 575px) {
+    [id^='curriculum-'] {
+        flex-direction: column;
+    }
+    [id^='curriculum-'] article {
+        width: 100%;
+    }
+    [id^='curriculum-'] aside {
+        width: 100vw;
+    }
+    [id^='curriculum-'] aside img {
+        width: 100vw;
+    }
+}
+
+
+/********************** CURRICULUM ***********************/
+
+
+/********************** FOOTER ***********************/
+
+footer {
+    background-color: black;
+    color: white;
+    order: 4;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: space-around;
+    justify-content: space-around;
+    height: 300px;
+}
+
+footer h3 {
+    font-size: 24px;
+}
+
+footer div:nth-child(1) {
+    order: 1;
+    height: 250px;
+    width: 250px;
+}
+
+footer div:nth-child(1) p {
+    margin: 35px 0;
+}
+
+footer div:nth-child(1) a {
+    border: 1px solid darkcyan;
+    color: white;
+    background-color: darkcyan;
+    font-size: 1em;
+    padding: 8px;
+    border-radius: 10%;
+}
+
+footer div:nth-child(2) {
+    order: 2;
+    height: 250px;
+    width: 250px;
+}
+
+footer div:nth-child(2) ul li {
+    margin: 10px 0;
+}
+
+footer div:nth-child(2) ul li a {
+    font-size: 18px;
+    color: lightgrey;
+}
+
+footer div:nth-child(2) ul li a:hover {
+    color: lightsalmon;
+}
+
+footer div:nth-child(3) {
+    order: 3;
+    height: 250px;
+    width: 250px;
+}
+
+footer div:nth-child(3) div a {
+    margin: 0 10px;
+}
+
+@media screen and (max-width: 575px) {
+    footer {
+        flex-direction: row;
+        align-content: center;
+        justify-content: center;
+        text-align: center;
+        height: 700px;
+    }
+    footer div:nth-child(2) ul {
+        list-style: none;
+    }
+    footer div:nth-child(1) {
+        margin-top: 12vh;
+        width: 100vw;
+    }
+    footer div:nth-child(2) {
+        width: 100vw;
+    }
+    footer div:nth-child(3) {
+        width: 100vw;
+    }
+}
+
+
+/********************** FOOTER ***********************/

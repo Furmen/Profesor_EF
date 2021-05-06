@@ -211,10 +211,16 @@ aside {
     display: flex;
     align-items: center;
     order: 3;
+    height: 50vh;
 }
 
 #photo-face article {
     background-image: url('../images/cara.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 25vw;
+    height: 25vh;
+    border-radius: 50%;
 }
 
 

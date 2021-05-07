@@ -342,7 +342,6 @@ footer {
     flex-wrap: wrap;
     flex-direction: column;
     align-content: space-around;
-    justify-content: space-around;
     height: 300px;
 }
 
@@ -352,7 +351,7 @@ footer h3 {
 
 footer div:nth-child(1) {
     order: 1;
-    height: 250px;
+    height: auto;
     width: 250px;
 }
 
@@ -371,7 +370,7 @@ footer div:nth-child(1) a {
 
 footer div:nth-child(2) {
     order: 2;
-    height: 250px;
+    height: auto;
     width: 250px;
 }
 
@@ -390,7 +389,7 @@ footer div:nth-child(2) ul li a:hover {
 
 footer div:nth-child(3) {
     order: 3;
-    height: 250px;
+    height: auto;
     width: 250px;
 }
 
@@ -412,14 +411,65 @@ footer div:nth-child(3) div a {
     footer div:nth-child(1) {
         margin-top: 12vh;
         width: 100vw;
+        height: auto;
     }
     footer div:nth-child(2) {
         width: 100vw;
+        height: auto;
     }
     footer div:nth-child(3) {
         width: 100vw;
+        height: auto;
     }
 }
 
 
 /********************** FOOTER ***********************/
+
+
+/********************** CONTACTO ***********************/
+
+#header-title {
+    background-color: lightseagreen;
+    display: flex;
+    justify-content: center;
+}
+
+#container-contact {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+}
+
+#container-contact section:nth-child(1) {
+    background-color: white;
+    width: 64vw;
+    height: 56.6vh;
+    padding: 1vw;
+}
+
+#container-contact section:nth-child(2) {
+    background-color: lightgrey;
+    width: 30vw;
+    height: 56.6vh;
+}
+
+@media screen and (max-width: 575px) {
+    #container-contact section:nth-child(1) {
+        background-color: white;
+        width: 100vw;
+        height: 50vh;
+        padding: 3vw;
+    }
+    #container-contact section:nth-child(2) {
+        background-color: lightgrey;
+        width: 100vw;
+        height: 32vh;
+        text-align: center;
+    }
+}
+
+
+/********************** CONTACTO ***********************/

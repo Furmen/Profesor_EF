@@ -293,13 +293,8 @@ aside {
     text-align: center;
 }
 
-[id^='curriculum-'] article ul {
-    list-style: none;
-}
-
 [id^='curriculum-'] article ul li {
     margin: 20px auto;
-    border-bottom: 1px solid lightgray;
 }
 
 [id^='curriculum-'] article section h1 {

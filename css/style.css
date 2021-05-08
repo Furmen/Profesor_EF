@@ -446,22 +446,82 @@ footer div:nth-child(3) div a {
 #container-contact section:nth-child(1) {
     background-color: white;
     width: 64vw;
-    height: 56.6vh;
+    height: 65vh;
     padding: 1vw;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#container-contact section:nth-child(1) div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-items: flex-start;
+    justify-content: space-around;
+    margin: 2rem auto;
+    text-align: start;
+}
+
+#container-contact section:nth-child(1) div label {
+    order: 1;
+    width: 150px;
+}
+
+#container-contact section:nth-child(1) div input,
+#container-contact section:nth-child(1) div textarea {
+    order: 2;
+    resize: none;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    height: 2rem;
+    padding: 10px;
+    width: 30vw;
+}
+
+#container-contact section:nth-child(1) div input[type='submit'] {
+    background-color: lightcyan;
+    color: black;
+    width: 20vw;
+    margin: 0 0 0 11vw;
+}
+
+#container-contact section:nth-child(1) div input[type='submit']:hover {
+    background-color: darkcyan;
+    color: white;
+    font-weight: bold;
+}
+
+#container-contact section:nth-child(1) div textarea {
+    height: max-content;
 }
 
 #container-contact section:nth-child(2) {
     background-color: lightgrey;
     width: 30vw;
-    height: 56.6vh;
+    height: 65vh;
 }
 
 @media screen and (max-width: 575px) {
     #container-contact section:nth-child(1) {
         background-color: white;
         width: 100vw;
-        height: 50vh;
+        height: 100vh;
         padding: 3vw;
+    }
+    #container-contact section:nth-child(1) div label {
+        width: 80vw;
+        text-align: center;
+    }
+    #container-contact section:nth-child(1) div input,
+    #container-contact section:nth-child(1) div textarea {
+        width: 80vw;
+        margin: 1rem;
+    }
+    #container-contact section:nth-child(1) div input[type='submit'] {
+        width: 80vw;
+        margin: 0 auto;
     }
     #container-contact section:nth-child(2) {
         background-color: lightgrey;

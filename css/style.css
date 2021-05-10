@@ -61,6 +61,9 @@ aside {
     padding: 1em;
 }
 
+
+/**************************** BARRA DE NAVEGACION *****************************/
+
 .main-nav {
     display: flex;
     align-items: center;
@@ -76,21 +79,10 @@ aside {
     padding: 0;
     margin: 0;
     display: flex;
-    flex: 3;
 }
 
 .main-nav li {
     margin-right: 1em;
-}
-
-.main-nav>form {
-    display: flex;
-    justify-content: flex-end;
-    flex: 1;
-}
-
-.main-nav input {
-    flex: 1;
 }
 
 .main-nav button {
@@ -106,15 +98,66 @@ aside {
     body {
         padding: 0;
     }
+    header {
+        padding: 0;
+    }
     .main-nav {
         flex-direction: column;
+        align-items: flex-start;
+        justify-items: flex-start;
+        padding: .5em;
+    }
+    .main-nav i {
+        font-size: 36px;
+    }
+    .main-nav i:hover {
+        color: lightsalmon
     }
     .main-nav ul {
-        flex-direction: row;
-        /* Change this to 'column' to stack the links */
+        width: 25vw;
+        background-color: transparent;
+        color: gray;
+        padding: 10px;
+        margin: 0;
+        top: 0;
+        z-index: 2;
+        font-size: 16px;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-items: flex-start;
         margin-bottom: 1em;
+        height: 0;
+        width: 0;
+        opacity: 0;
+    }
+    .main-nav ul:hover {
+        animation-name: background-animation, opacity-animation;
+        animation-duration: .7s;
+        background-color: white;
+        height: 250px;
+        width: 250px;
+        opacity: 1;
+    }
+    @keyframes background-animation {
+        from {
+            background-color: transparent;
+        }
+        to {
+            background-color: white;
+        }
+    }
+    @keyframes opacity-animation {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
     }
 }
+
+
+/**************************** BARRA DE NAVEGACION *****************************/
 
 
 /********************** CONTAINER ***********************/

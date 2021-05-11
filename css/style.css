@@ -50,7 +50,6 @@ a:hover {
 header,
 footer {
     background: white;
-    height: 10vh;
 }
 
 header,
@@ -72,6 +71,7 @@ aside {
     padding: 1em;
     font-size: 1.5em;
     font-weight: bold;
+    height: 50px;
 }
 
 .main-nav>ul {
@@ -94,6 +94,10 @@ aside {
     margin-left: .3em;
 }
 
+#mobile {
+    display: none;
+}
+
 @media screen and (max-width: 575px) {
     body {
         padding: 0;
@@ -101,58 +105,28 @@ aside {
     header {
         padding: 0;
     }
+    #desktop {
+        display: none;
+    }
+    #mobile {
+        display: flex;
+    }
     .main-nav {
         flex-direction: column;
         align-items: flex-start;
         justify-items: flex-start;
         padding: .5em;
     }
-    .main-nav i {
-        font-size: 36px;
-    }
-    .main-nav i:hover {
-        color: lightsalmon
-    }
     .main-nav ul {
-        width: 25vw;
-        background-color: transparent;
         color: gray;
-        padding: 10px;
-        margin: 0;
-        top: 0;
+        top: 15px;
         z-index: 2;
-        font-size: 16px;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-items: flex-start;
-        margin-bottom: 1em;
-        height: 0;
-        width: 0;
-        opacity: 0;
-    }
-    .main-nav ul:hover {
-        animation-name: background-animation, opacity-animation;
-        animation-duration: .7s;
-        background-color: white;
-        height: 250px;
-        width: 250px;
-        opacity: 1;
-    }
-    @keyframes background-animation {
-        from {
-            background-color: transparent;
-        }
-        to {
-            background-color: white;
-        }
-    }
-    @keyframes opacity-animation {
-        from {
-            opacity: 0;
-        }
-        to {
-            opacity: 1;
-        }
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        justify-items: center;
+        list-style: none;
+        width: 100vw;
     }
 }
 

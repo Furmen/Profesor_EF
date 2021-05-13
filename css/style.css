@@ -468,6 +468,11 @@ footer div:nth-child(3) div a {
     display: flex;
     align-items: flex-start;
     justify-content: center;
+    flex-direction: column;
+}
+
+#container-contact section:nth-child(1) form {
+    margin: 0 auto;
 }
 
 #container-contact section:nth-child(1) div {

@@ -518,6 +518,28 @@ footer div:nth-child(3) div a {
     background-color: lightgrey;
     width: 30vw;
     height: 65vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+#place-train {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 0;
+}
+
+#place-train section:nth-child(1) {
+    background-color: cornflowerblue;
+    width: 100vw;
+    text-align: center;
+}
+
+#place-train section:nth-child(2) iframe {
+    width: 100vw;
 }
 
 @media screen and (max-width: 575px) {
@@ -543,8 +565,7 @@ footer div:nth-child(3) div a {
     #container-contact section:nth-child(2) {
         background-color: lightgrey;
         width: 100vw;
-        height: 32vh;
-        text-align: center;
+        height: 65vh;
     }
 }
 

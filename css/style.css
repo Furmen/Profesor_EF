@@ -31,7 +31,7 @@ li:nth-of-type(3):hover~.underbar {
 li:nth-of-type(4):hover~.underbar {
     width: 60px;
     background: #c98418;
-    left: 438px;
+    left: 435px;
 }
 
 @media screen and (max-width: 575px) {

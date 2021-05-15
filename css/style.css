@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
 }
 
 
@@ -49,7 +50,13 @@ a:hover {
 
 header,
 footer {
-    background: white;
+    background: black;
+    color: white;
+}
+
+header a,
+footer a {
+    color: white;
 }
 
 header,
@@ -352,8 +359,6 @@ aside {
 /********************** FOOTER ***********************/
 
 footer {
-    background-color: black;
-    color: white;
     order: 4;
     display: flex;
     flex-wrap: wrap;
@@ -397,7 +402,6 @@ footer div:nth-child(2) ul li {
 
 footer div:nth-child(2) ul li a {
     font-size: 18px;
-    color: lightgrey;
 }
 
 footer div:nth-child(2) ul li a:hover {
@@ -426,7 +430,7 @@ footer div:nth-child(3) div a {
         list-style: none;
     }
     footer div:nth-child(1) {
-        margin-top: 12vh;
+        margin-top: 0;
         width: 100vw;
         height: auto;
     }

@@ -1,3 +1,65 @@
+/********************** ANIMACIONES ***********************/
+
+.underbar {
+    width: 0;
+    height: 5px;
+    background: rgba(100, 100, 200, 0);
+    position: absolute;
+    transition: 0.5s ease;
+    top: 58px;
+    left: 0;
+}
+
+li:nth-of-type(1):hover~.underbar {
+    width: 30px;
+    background: #6464c8;
+    left: 80px;
+}
+
+li:nth-of-type(2):hover~.underbar {
+    width: 40px;
+    background: #c86464;
+    left: 195px;
+}
+
+li:nth-of-type(3):hover~.underbar {
+    width: 50px;
+    background: #c81418;
+    left: 320px;
+}
+
+li:nth-of-type(4):hover~.underbar {
+    width: 60px;
+    background: #c98418;
+    left: 438px;
+}
+
+@media screen and (max-width: 575px) {
+    .underbar {
+        top: 45px;
+        left: 0;
+    }
+    li:nth-of-type(1):hover~.underbar {
+        width: 30px;
+        left: 50px;
+    }
+    li:nth-of-type(2):hover~.underbar {
+        width: 30px;
+        left: 170px;
+    }
+    li:nth-of-type(3):hover~.underbar {
+        width: 30px;
+        left: 295px;
+    }
+    li:nth-of-type(4):hover~.underbar {
+        width: 30px;
+        left: 420px;
+    }
+}
+
+
+/********************** ANIMACIONES ***********************/
+
 * {
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
@@ -46,6 +108,7 @@ a {
 
 a:hover {
     color: lightsalmon;
+    animation: small-jump 1.4s;
 }
 
 header,
@@ -92,15 +155,6 @@ aside {
     margin-right: 1em;
 }
 
-.main-nav button {
-    background: white;
-    border: 0;
-    border-radius: 1em;
-    color: orangered;
-    padding: 0 1em;
-    margin-left: .3em;
-}
-
 #mobile {
     display: none;
 }
@@ -123,6 +177,7 @@ aside {
         align-items: flex-start;
         justify-items: flex-start;
         padding: .5em;
+        height: 60px;
     }
     .main-nav ul {
         color: gray;
@@ -580,3 +635,43 @@ footer div:nth-child(3) div a {
 
 
 /********************** CONTACTO ***********************/
+
+
+/********************** OPINIONES ***********************/
+
+#container-opinion {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: white;
+}
+
+#container-opinion section {
+    width: 20vw;
+    text-align: center;
+    border: 1px solid lightgray;
+    margin-bottom: 2rem;
+}
+
+#container-opinion section:hover {
+    border: 1px solid lightsalmon;
+    box-shadow: 10px 5px 5px lightgray;
+}
+
+#container-opinion section:last-child {
+    margin-bottom: 0;
+}
+
+#container-opinion section img {
+    width: 100%;
+}
+
+@media screen and (max-width: 575px) {
+    #container-opinion section {
+        width: 100vw;
+    }
+}
+
+
+/********************** OPINIONES ***********************/

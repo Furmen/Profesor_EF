@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="//fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap">
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <link rel="stylesheet" href="fonts/icomoon/style.css">
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css" />
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -60,68 +61,91 @@
     <!-- MENU NAVEGACION -->
 
     <div id="container">
-        <article id="header-title">
-            <h1>Formulario de contacto</h1>
-        </article>
-        <article id="container-contact">
 
-            <!-- FORMULARIO -->
-            <section>
-                <form action="#">
+        <!-- PIERNAS -->
+
+        <main>
+            <article>
+                <section id="header-title">
+                    <h1>Piernas</h1>
+                </section>
+            </article>
+            <article>
+                <a href="javascript:;" data-toggle="modal" data-target="#leg-1">
+                    <img src="images/sentadilla.gif" />
                     <div>
-                        <label for="fullname">Nombre completo</label>
-                        <input type="text" id="fullname" placeholder="Nombre completo">
+                        <h3>Sentadilla</h3>
                     </div>
-
+                </a>
+                <a href="javascript:;" data-toggle="modal" data-target="#leg-2">
+                    <img src="images/sentadilla-punch.gif" />
                     <div>
-                        <label for="email">Correo electrónico</label>
-                        <input type="email" id="email" placeholder="Correo electrónico">
+                        <h3>Sentadilla + Cross</h3>
                     </div>
-
+                </a>
+                <a href="javascript:;" data-toggle="modal" data-target="#leg-3">
+                    <img src="images/estocada-1-pierna.gif" />
                     <div>
-                        <label for="phone">Teléfono</label>
-                        <input type="text" id="phone" placeholder="Teléfono">
+                        <h3>Estocada estática</h3>
                     </div>
+                </a>
+            </article>
+        </main>
 
-                    <div>
-                        <label for="message">Mensaje</label>
-                        <textarea name="message" id="message" cols="22" rows="5" placeholder="Mensaje"></textarea>
+        <!-- Modal - leg-1 -->
+        <div class="modal fade" id="leg-1" tabindex="-1" role="dialog" aria-labelledby="leg-1-title" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="leg-1-title">Sentadilla</h5>
                     </div>
-
-                    <div>
-                        <input type="submit" value="Enviar">
+                    <div class="modal-body" style="height: 50vh;">
+                        <iframe src="https://www.youtube.com/embed/Yw86UcprH1M" title="Explicación sentadilla" width="100%" height="100%" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                        </iframe>
                     </div>
-                </form>
-            </section>
-            <!-- FORMULARIO -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">Ok</button>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-            <!-- CONTACTO INFO -->
-            <section>
-                <h3>Información de contacto</h3>
-                <h4>Dirección</h4>
-                <p>Calle Segurola 1530, Turdera</p>
-                <h4>Celular</h4>
-                <p><a href="#">+5491138434755</a></p>
-                <h4>Correo electrónico</h4>
-                <p><a href="#">profesorx@gmail.com</a></p>
-            </section>
-            <!-- CONTACTO INFO -->
-        </article>
+        <!-- Modal - leg-2 -->
+        <div class="modal fade" id="leg-2" tabindex="-1" role="dialog" aria-labelledby="leg-2-title" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="leg-2-title">Sentadilla + Cross</h5>
+                    </div>
+                    <div class="modal-body" style="height: 50vh;">
+                        <iframe src="https://www.youtube.com/embed/Yw86UcprH1M" title="Explicación sentadilla más cross" width="100%" height="100%" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">Ok</button>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-        <article id="place-train">
-            <!-- TITULO DE ENTRENAMIENTO -->
-            <section>
-                <h1>Lugar de entrenamiento</h1>
-            </section>
-            <!-- TITULO DE ENTRENAMIENTO -->
+        <!-- Modal - leg-3 -->
+        <div class="modal fade" id="leg-3" tabindex="-1" role="dialog" aria-labelledby="leg-3-title" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="leg-3-title">Estocada estática</h5>
+                    </div>
+                    <div class="modal-body" style="height: 50vh;">
+                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/vqTLr5gCf5M" title="Explicación estocada estática" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">Ok</button>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-            <!-- LUGAR DE ENTRENAMIENTO -->
-            <section>
-                <iframe width="600" height="450" style="border:0" loading="lazy" allowfullscreen src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDUBOKl3kBut4rRLzTBf9eEJtpnE6fmRDk&q=Space+Needle,Seattle+WA">
-                </iframe>
-            </section>
-            <!-- LUGAR DE ENTRENAMIENTO -->
-        </article>
+        <!-- PIERNAS -->
 
         <!-- FOOTER -->
         <footer>
@@ -144,7 +168,7 @@
                         <a href="opinion.html">Opiniones</a>
                     </li>
                     <li>
-                        <a href="exercise.html">Ejercicios</a>
+                        <a href="exercise.html">Ejercicios/a>
                     </li>
                     <li>
                         <a href="contact.html">Contacto</a>
@@ -172,6 +196,9 @@
         </footer>
         <!-- FOOTER -->
     </div>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 </body>
 
 </html>

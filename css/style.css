@@ -307,14 +307,11 @@ aside {
     text-align: center;
     padding: 25px;
     order: 2;
-    height: 50vh;
+    height: 67vh;
     color: white;
 }
 
-#photo-face article {
-    background-image: url('../images/cara.jpg');
-    background-size: contain;
-    background-repeat: no-repeat;
+#photo-face img {
     width: 225px;
     height: 225px;
     border-radius: 50%;
@@ -345,6 +342,12 @@ aside {
     color: white;
 }
 
+@media screen and (max-width: 575px) {
+    #photo-face {
+        height: 70vh;
+    }
+}
+
 
 /********************** FOTO DE CARA ***********************/
 
@@ -358,7 +361,7 @@ aside {
     justify-items: center;
     order: 1;
     background-color: lightgrey;
-    margin-bottom: 8rem;
+    margin-bottom: 2rem;
 }
 
 [id^='curriculum-'] article {
@@ -483,7 +486,7 @@ footer div:nth-child(3) div a {
         align-content: center;
         justify-content: center;
         text-align: center;
-        height: 700px;
+        height: 800px;
     }
     footer div:nth-child(2) ul {
         list-style: none;
@@ -661,10 +664,6 @@ footer div:nth-child(3) div a {
 #container-opinion section:hover {
     border: 1px solid lightsalmon;
     box-shadow: 10px 5px 5px lightgray;
-}
-
-#container-opinion section:last-child {
-    margin-bottom: 0;
 }
 
 #container-opinion section img {

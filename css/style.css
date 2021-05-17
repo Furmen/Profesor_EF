@@ -101,7 +101,7 @@ body {
 }
 
 a {
-    text-decoration: none;
+    text-decoration: none !important;
     color: gray;
     font-size: 22px;
 }
@@ -764,6 +764,10 @@ main article:nth-child(2) a:nth-child(3) img {
 
 /*                      BRAZOS                          */
 
+#main-arms #header-title {
+    background-color: #c98418;
+}
+
 #main-arms article:nth-child(2) a:nth-child(1) img {
     width: 21vw;
 }
@@ -779,10 +783,15 @@ main article:nth-child(2) a:nth-child(3) img {
 
 /*                      BRAZOS                          */
 
+
 /*                      PECHO                          */
 
+#main-chest #header-title {
+    background-color: #c86464;
+}
+
 #main-chest article:nth-child(2) a:nth-child(1) img {
-    width: 16vw;
+    width: 15vw;
 }
 
 #main-chest article:nth-child(2) a:nth-child(2) img {

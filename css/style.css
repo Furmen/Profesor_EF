@@ -318,7 +318,7 @@ aside {
     text-align: center;
     padding: 25px;
     order: 2;
-    height: 67vh;
+    height: 45vh;
     color: white;
     margin: 1rem 0 1rem 0;
 }
@@ -356,7 +356,7 @@ aside {
 
 @media screen and (max-width: 575px) {
     #photo-face {
-        height: 70vh;
+        height: 52vh;
     }
 }
 
@@ -697,67 +697,77 @@ footer div:nth-child(3) div a {
 
 /*                      PIERNAS                          */
 
-.main-excercise {
+#main-legs,
+#main-arms,
+#main-chest {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-around;
     background-color: white;
     border: 1px solid lightgray;
-    margin-bottom: 2rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
+    margin: 1rem 0;
+    padding: 0;
 }
 
-#main-excercise:hover {
-    border: 1px solid black;
-    box-shadow: 10px 5px 5px black;
+#main-legs #header-title,
+#main-arms #header-title,
+#main-chest #header-title {
+    width: 100vw;
 }
 
-#main-legs article:nth-child(2) a:nth-child(1) {
-    width: 29vw;
+#main-legs section,
+#main-arms section,
+#main-chest section {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
     text-align: center;
-    border-right: 1px solid black;
 }
 
-#main-legs article:nth-child(2) a:nth-child(1):hover {
-    font-weight: bold;
-    text-decoration: underline #6464c8;
-    cursor: pointer;
-}
 
-#main-legs article:nth-child(2) a:nth-child(1) img {
-    width: 25vw;
-}
-
-#main-legs article:nth-child(2) a:nth-child(2) {
-    width: 29vw;
-    text-align: center;
-    border-right: 1px solid black;
-}
-
-#main-legs article:nth-child(2) a:nth-child(2):hover {
-    font-weight: bold;
-    text-decoration: underline #6464c8;
-    cursor: pointer;
-}
-
-#main-legs article:nth-child(2) a:nth-child(2) img {
-    width: 25vw;
-}
-
-#main-legs article:nth-child(2) a:nth-child(3) {
+#main-legs section:nth-child(2),
+#main-arms section:nth-child(2),
+#main-chest section:nth-child(2) {
     width: 27vw;
-    text-align: center;
+    border-right: 1px solid black;
 }
 
-#main-legs article:nth-child(2) a:nth-child(3):hover {
-    font-weight: bold;
-    text-decoration: underline #6464c8;
-    cursor: pointer;
+#main-legs section:nth-child(3),
+#main-arms section:nth-child(3),
+#main-chest section:nth-child(3) {
+    width: 27vw;
+    border-right: 1px solid black;
 }
 
-#main-legs article:nth-child(2) a:nth-child(3) img {
+#main-legs section:nth-child(4),
+#main-arms section:nth-child(4),
+#main-chest section:nth-child(4) {
+    width: 27vw;
+}
+
+#main-legs section:nth-child(2) {
+    width: 27vw;
+}
+
+#main-legs section:nth-child(2) a:nth-child(1) img {
+    width: 25vw;
+}
+
+#main-legs section:nth-child(3) {
+    width: 27vw;
+}
+
+#main-legs section:nth-child(3) a:nth-child(1) img {
+    width: 25vw;
+}
+
+#main-legs section:nth-child(4) {
+    width: 27vw;
+}
+
+#main-legs section:nth-child(4) a:nth-child(1) img {
     width: 25vw;
 }
 
@@ -771,15 +781,27 @@ footer div:nth-child(3) div a {
     background-color: #c98418;
 }
 
-#main-arms article:nth-child(2) a:nth-child(1) img {
+#main-arms section:nth-child(2) {
+    width: 27vw;
+}
+
+#main-arms section:nth-child(2) a:nth-child(1) img {
     width: 21vw;
 }
 
-#main-arms article:nth-child(2) a:nth-child(2) img {
+#main-arms section:nth-child(3) {
+    width: 27vw;
+}
+
+#main-arms section:nth-child(3) a:nth-child(1) img {
     width: 13.6vw;
 }
 
-#main-arms article:nth-child(2) a:nth-child(3) img {
+#main-arms section:nth-child(4) {
+    width: 27vw;
+}
+
+#main-arms section:nth-child(4) a:nth-child(1) img {
     width: 23.5vw;
 }
 
@@ -793,16 +815,17 @@ footer div:nth-child(3) div a {
     background-color: #c86464;
 }
 
-#main-chest article:nth-child(2) a:nth-child(1) img {
-    width: 15vw;
-}
-
-#main-chest article:nth-child(2) a:nth-child(2) img {
-    width: 16.5vw;
-}
-
-#main-chest article:nth-child(2) a:nth-child(3) img {
+#main-chest section:nth-child(2) a:nth-child(1) img {
     width: 16.7vw;
+}
+
+#main-chest section:nth-child(3) a:nth-child(1) img {
+    width: 17.2vw;
+
+}
+
+#main-chest section:nth-child(4) a:nth-child(1) img {
+    width: 17.2vw;
 }
 
 

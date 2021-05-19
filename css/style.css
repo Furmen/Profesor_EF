@@ -42,29 +42,7 @@ li:nth-of-type(5):hover~.underbar {
 
 @media screen and (max-width: 575px) {
     .underbar {
-        top: 45px;
-        left: 0;
-        width: 30px;
-    }
-    li:nth-of-type(1):hover~.underbar {
-        left: 37px;
-        width: 30px;
-    }
-    li:nth-of-type(2):hover~.underbar {
-        left: 138px;
-        width: 30px;
-    }
-    li:nth-of-type(3):hover~.underbar {
-        left: 235px;
-        width: 30px;
-    }
-    li:nth-of-type(4):hover~.underbar {
-        left: 333px;
-        width: 30px;
-    }
-    li:nth-of-type(5):hover~.underbar {
-        left: 430px;
-        width: 30px;
+        display: none;
     }
 }
 
@@ -270,6 +248,10 @@ aside {
     width: 100%;
     color: gray;
     font-size: xx-large;
+}
+
+#gallery section h1 {
+    margin-top: 1rem;
 }
 
 #gallery section h2 {
@@ -508,7 +490,7 @@ footer div:nth-child(3) div a {
         align-content: center;
         justify-content: center;
         text-align: center;
-        height: 800px;
+        height: 750px;
     }
     footer div:nth-child(2) ul {
         list-style: none;

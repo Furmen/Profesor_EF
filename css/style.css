@@ -274,6 +274,7 @@ aside {
 
 #gallery section h2 {
     font-size: x-large !important;
+    margin-top: 1rem;
 }
 
 #gallery>article {
@@ -281,6 +282,11 @@ aside {
     border: 1px solid lightgray;
     padding: 0;
     margin: 10px;
+}
+
+#gallery>article:hover {
+    border: 1px solid lightsalmon;
+    box-shadow: 10px 5px 5px lightgray;
 }
 
 #gallery>article img {

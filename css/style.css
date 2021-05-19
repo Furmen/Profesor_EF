@@ -322,7 +322,7 @@ aside {
     text-align: center;
     padding: 25px;
     order: 2;
-    height: 45vh;
+    height: 24rem;
     color: white;
     margin: 1rem 0 1rem 0;
 }
@@ -360,7 +360,7 @@ aside {
 
 @media screen and (max-width: 575px) {
     #photo-face {
-        height: 60vh;
+        height: 25rem;
     }
 }
 

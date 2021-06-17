@@ -1,7 +1,33 @@
-<p>
-    eventos works!
-</p>
-<div *ngFor="let evento of eventos">
-    Tema: {{evento.date}} <br> Local: {{evento.summary}}
-    <hr>
-</div>
+<form class="form-inline">
+    <div class="form-group mb-2">
+        <input type="text" class="form-control mr-4" placeholder="Buscar">
+        <button class="btn btn-outline-success">Buscar</button>
+    </div>
+</form>
+<table class="table table-striped">
+    <thead class="thead-dark">
+        <tr>
+            <th>#</th>
+            <th>Fecha</th>
+            <th>Temperatura</th>
+            <th>Summary</th>
+        </tr>
+    </thead>
+    <tbody *ngIf="eventos && eventos.length">
+        <tr *ngFor="let evento of eventos; let i = index">
+            <td>{{(i+1)}}</td>
+            <td>{{evento.date}}</td>
+            <td>{{evento.temperatureC + "F°"}}</td>
+            <td>{{evento.summary}}</td>
+        </tr>
+    </tbody>
+    <tfoot *ngIf="!eventos.length">
+        <tr>
+            <td>
+                <h4>
+                    No posee eventos!!
+                </h4>
+            </td>
+        </tr>
+    </tfoot>
+</table>

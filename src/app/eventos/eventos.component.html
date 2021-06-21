@@ -8,17 +8,23 @@
     <thead class="thead-dark">
         <tr>
             <th>#</th>
-            <th>Fecha</th>
-            <th>Temperatura</th>
-            <th>Summary</th>
+            <th>Id</th>
+            <th>Local</th>
+            <th>Tema</th>
+            <th>Fecha del Evento</th>
+            <th>Pesos</th>
+            <th>Lote</th>
         </tr>
     </thead>
     <tbody *ngIf="eventos && eventos.length">
         <tr *ngFor="let evento of eventos; let i = index">
             <td>{{(i+1)}}</td>
-            <td>{{evento.date}}</td>
-            <td>{{evento.temperatureC + "F°"}}</td>
-            <td>{{evento.summary}}</td>
+            <td>{{evento.eventoId}}</td>
+            <td>{{evento.local}}</td>
+            <td>{{evento.tema}}</td>
+            <td>{{evento.dataEvento}}</td>
+            <td>{{evento.pesos}}</td>
+            <td>{{evento.lote}}</td>
         </tr>
     </tbody>
     <tfoot *ngIf="!eventos.length">

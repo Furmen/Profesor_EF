@@ -1,11 +1,14 @@
-<form class="form-inline">
+<div class="form-inline">
     <div class="form-group mb-2">
-        <input type="text" class="form-control mr-4" placeholder="Buscar">
-        <button class="btn btn-outline-success">Buscar</button>
+        <input type="text" class="form-control mr-4" placeholder="Buscar" [(ngModel)]="filtroLista">
+        <button class=" btn btn-outline-success ">Buscar</button>
     </div>
-</form>
-<table class="table table-striped">
-    <thead class="thead-dark">
+</div>
+<div>
+    <h3>Filtro: {{filtroLista}}</h3>
+</div>
+<table class="table table-striped ">
+    <thead class="thead-dark ">
         <tr>
             <th>#</th>
             <th>Id</th>
@@ -16,21 +19,21 @@
             <th>Lote</th>
         </tr>
     </thead>
-    <tbody *ngIf="eventos && eventos.length">
-        <tr *ngFor="let evento of eventos; let i = index">
+    <tbody *ngIf="eventosFiltrados && eventosFiltrados.length ">
+        <tr *ngFor="let evento of eventosFiltrados; let i=index ">
             <td>{{(i+1)}}</td>
             <td>{{evento.eventoId}}</td>
             <td>{{evento.local}}</td>
             <td>{{evento.tema}}</td>
             <td>{{evento.dataEvento}}</td>
-            <td>{{evento.pesos}}</td>
+            <td>{{evento.pesos | currency}}</td>
             <td>{{evento.lote}}</td>
         </tr>
     </tbody>
-    <tfoot *ngIf="!eventos.length">
+    <tfoot *ngIf="!eventosFiltrados.length ">
         <tr>
-            <td>
-                <h4>
+            <td colspan="7 ">
+                <h4 class="text-center ">
                     No posee eventos!!
                 </h4>
             </td>
